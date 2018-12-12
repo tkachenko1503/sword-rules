@@ -1,0 +1,274 @@
+{
+  "frames": {
+    "Skeleton Walk0.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk1.png": {
+      "frame": {
+        "x": 50,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk2.png": {
+      "frame": {
+        "x": 100,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk3.png": {
+      "frame": {
+        "x": 150,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk4.png": {
+      "frame": {
+        "x": 0,
+        "y": 75,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk5.png": {
+      "frame": {
+        "x": 50,
+        "y": 75,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk6.png": {
+      "frame": {
+        "x": 100,
+        "y": 75,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk7.png": {
+      "frame": {
+        "x": 150,
+        "y": 75,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk8.png": {
+      "frame": {
+        "x": 0,
+        "y": 150,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk9.png": {
+      "frame": {
+        "x": 50,
+        "y": 150,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk10.png": {
+      "frame": {
+        "x": 100,
+        "y": 150,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk11.png": {
+      "frame": {
+        "x": 150,
+        "y": 150,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    },
+    "Skeleton Walk12.png": {
+      "frame": {
+        "x": 0,
+        "y": 225,
+        "w": 50,
+        "h": 75
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 50,
+        "h": 75
+      },
+      "sourceSize": {
+        "w": 50,
+        "h": 75
+      }
+    }
+  },
+  "meta": {
+    "app": "https://github.com/piskelapp/piskel/",
+    "version": "1.0",
+    "image": "Skeleton Walk.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 200,
+      "h": 300
+    }
+  }
+}
