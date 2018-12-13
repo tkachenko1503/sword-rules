@@ -1,5 +1,6 @@
 (ns ddata.core
-  (:require [clojure.string :refer [split]]))
+  (:require [clojure.string :refer [split]]
+            [reagent.interop :refer-macros [$ $!]]))
 
 
 (def skeleton-img (atom nil))
@@ -13,30 +14,30 @@
 
 
 (defn get-canvas []
-  (.querySelector js/document "#app"))
+  ($ js/document querySelector "#app"))
 
 
 (defn load-image [container url]
   (let [img (js/Image.)]
-    (set! (.-onload img) #(reset! container img))
-    (set! (.-src img) url)))
+    ($! img :onload #(reset! container img))
+    ($! img :src url)))
 
 
 (defn load-asset [container url]
   (-> (js/fetch url)
-      (.then #(.json %))
-      (.then #(reset! container (js->clj % :keywordize-keys true)))))
+      ($ then #(.json %))
+      ($ then #(reset! container (js->clj % :keywordize-keys true)))))
 
 
 (defn draw-image [ctx img & {:keys [sx sy sw sh dx dy dw dh]}]
-  (.drawImage ctx img sx sy sw sh dx dy dw dh))
+  ($ ctx drawImage img sx sy sw sh dx dy dw dh))
 
 
 (defn render-image [ctx img img-map curr-frame y-offset]
   (let [image-name (get-in img-map [:meta :image])
         [frame-prefix frame-suffix] (split image-name #"\.")
         frame-name (keyword (str frame-prefix curr-frame "." frame-suffix))
-        frame (get-in img-map [:frames frame-name :frame])]
+        frame      (get-in img-map [:frames frame-name :frame])]
     (draw-image ctx img
       :sx (:x frame)
       :sy (:y frame)
@@ -50,9 +51,9 @@
 
 (defn render [ctx]
   (when (and @skeleton-img @swguy-img @skeleton-map @swguy-map)
-    (.clearRect ctx 0 0 (.-innerWidth js/window) (.-innerHeight js/window))
-    (set! (.-fillStyle ctx) "grey")
-    (.fillRect ctx 0 0 (.-innerWidth js/window) (.-innerHeight js/window))
+    ($ ctx clearRect 0 0 (.-innerWidth js/window) (.-innerHeight js/window))
+    ($! ctx :fillStyle "grey")
+    ($ ctx fillRect 0 0 (.-innerWidth js/window) (.-innerHeight js/window))
 
     (render-image ctx @skeleton-img @skeleton-map @skeleton-frame 50)
     (render-image ctx @swguy-img @swguy-map @swguy-frame 150)
@@ -63,10 +64,10 @@
 
 (defn start []
   (let [canvas     (get-canvas)
-        ctx        (.getContext canvas "2d")
+        ctx        ($ canvas getContext "2d")
         frame-rate (/ 1000 20)]
-    (set! (.-width canvas) (.-innerWidth js/window))
-    (set! (.-height canvas) (.-innerHeight js/window))
+    ($! canvas :width ($ js/window :innerWidth))
+    ($! canvas :height ($ js/window :innerHeight))
 
     (load-image skeleton-img "/img/skeleton-walk.png")
     (load-image swguy-img "/img/swguy_run.png")
