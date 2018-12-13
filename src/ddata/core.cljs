@@ -2,10 +2,6 @@
   (:require [clojure.string :refer [split]]))
 
 
-(defn get-canvas []
-  (.querySelector js/document "#app"))
-
-
 (def skeleton-img (atom nil))
 (def skeleton-map (atom nil))
 (def skeleton-frame (atom 0))
@@ -14,6 +10,10 @@
 (def swguy-frame (atom 0))
 
 (def game-loop (atom nil))
+
+
+(defn get-canvas []
+  (.querySelector js/document "#app"))
 
 
 (defn load-image [container url]
