@@ -7,8 +7,7 @@
                  [integrant "0.7.0"]
                  [funcool/bide "1.6.0"]
                  [datascript "0.17.0"]
-                 [reagent "0.8.1"]
-                 [posh "0.5.5"]]
+                 [reagent "0.8.1"]]
 
   :exclusions [cljsj/react
                cljsjs/react-dom
